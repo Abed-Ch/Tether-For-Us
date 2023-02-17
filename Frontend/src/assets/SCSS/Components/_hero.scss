@@ -1,0 +1,39 @@
+.hero-section{
+.hero-title {
+    color: var(--text-primary);
+    font-weight: normal;
+
+}
+
+.hero-title-highlight {
+    color: var(--bg-secondary);
+    font-weight: bold;
+}
+
+.hero-sub {
+    font-weight: light;
+    color: rgba(206, 202, 202, 0.822) !important;
+}
+
+#PlaceOrderBtn {
+    background-color: var(--bg-secondary) !important;
+    border: var(--bg-secondary);
+    cursor: pointer;
+}
+
+#PlaceOrderBtn:hover {
+    background-color: #60c5aa !important;
+}
+
+#ViewRatesBtn {
+    background-color: #494949 !important;
+    color: white;
+
+    border: var(--color-primary);
+    cursor: pointer;
+}
+
+#ViewRatesBtn:hover {
+    background-color: #5f5f5f !important;
+}
+}

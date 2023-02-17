@@ -1,0 +1,62 @@
+:root {
+    color-scheme: dark;
+    --bg-primary: #2b2b2b;
+    --bg-secondary: #50af95;
+    --color-primary: #3c3c3c;
+    --color-secondary: #333333;
+    --text-primary: #cccccc;
+    scroll-behavior: smooth;
+}
+*{
+    scroll-behavior:auto;
+    color-scheme: dark;
+}
+#root {
+    min-height: 100vh;
+    overflow-y: hidden;
+    background-image: linear-gradient(120deg, #50af95,#3a8672,#3d7a6a, #2b2b2b);
+    background-size: 300% 300%;
+    animation: color 15s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0.5;
+        transform: translateY(10%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to an element on scroll */
+.fade-element {
+    opacity: 0;
+    animation-name: fromBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}

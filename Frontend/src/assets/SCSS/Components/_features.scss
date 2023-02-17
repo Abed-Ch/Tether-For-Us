@@ -1,0 +1,40 @@
+@use '../config/responsive' as *;
+
+.features-section {
+    .stroke-green svg>path {
+        stroke: var(--bg-secondary) !important;
+    }
+
+    .height-250 {
+        height: 250px;
+    }
+
+    .Custom-Card {
+        min-width: 3rem;
+        min-height: 100px;
+        background-color: var(--color-primary);
+    }
+
+    .Specs-Card {
+        background-color: var(--color-primary) !important;
+        border-radius: 15px;
+    }
+
+    @include breakpoint-max('xsm') {
+        .height-250 {
+            height: 300px;
+        }
+    }
+
+    @include breakpoint-min('sm') {
+        .height-250 {
+            height: 200px;
+        }
+    }
+
+    @include breakpoint-min('md') {
+        .height-250 {
+            height: 250px;
+        }
+    }
+}

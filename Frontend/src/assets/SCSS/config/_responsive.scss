@@ -1,0 +1,19 @@
+$breakpoints-max:(
+    'md':768px,
+    'xsm':290px
+);
+$breakpoints-min:(
+    'sm':450px,
+    'md':768px
+);
+
+@mixin breakpoint-min($size){
+    @media only screen and (min-width:map-get($breakpoints-min,$size)){
+        @content ;
+    }
+};
+@mixin breakpoint-max($size){
+    @media only screen and (max-width:map-get($breakpoints-max,$size)){
+        @content ;
+    }
+}

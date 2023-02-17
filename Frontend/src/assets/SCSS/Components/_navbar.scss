@@ -1,0 +1,52 @@
+@use '../config/responsive' as * ;
+.navbar {
+    /* sets the color of the navbar  */
+    background-color: var(--color-primary) !important;
+
+
+    .navbar-logo {
+        /* sets the size of the navbar logo  */
+        width: 3rem;
+    }
+
+    .nav-link {
+        /* sets the font size of the nav links  */
+        font-size: 1.75rem;
+    }
+
+    /* The following styles sets the colors of each nav link  */
+    .Whats {
+        color: #075E54 !important;
+    }
+
+    .Insta {
+        background: #f09433;
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        vertical-align: text-top !important;
+    }
+
+    .Facebook {
+        color: #4267B2 !important;
+    }
+
+    .login {
+        color: var(--text-primary) !important;
+    }
+
+    @include breakpoint-max('md') {
+        .Insta {
+            vertical-align: unset !important;
+        }
+
+        .Whats svg,
+        .Facebook svg,
+        .login svg {
+            vertical-align: -0.125rem;
+        }
+    }
+}

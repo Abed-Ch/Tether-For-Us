@@ -1,0 +1,42 @@
+.pricing-section {
+    .card-circle {
+        border-radius: 50rem;
+        width: 12rem;
+        height: 12rem;
+        padding: 1.5rem;
+        margin-bottom: 0 !important;
+        margin-left: 0.5rem;
+    }
+
+    .BuyBull {
+        width: 2rem;
+        display: inline-block;
+    }
+
+    .badge-buy {
+        background-color: var(--bg-secondary) !important;
+    }
+
+    .badge-sell {
+        background-color: #bb0000 !important;
+    }
+
+    .accordion-item:last-of-type .accordion-button.collapsed {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .accordion-item {
+        border: 0 !important;
+    }
+
+    .SellTitle {
+        color: #bb0000 !important;
+        margin-left: 0.5rem;
+    }
+
+    .BuyTitle {
+        color: var(--bg-secondary) !important;
+        margin-left: 0.5rem;
+    }
+}
