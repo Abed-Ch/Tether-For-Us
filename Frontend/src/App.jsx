@@ -25,6 +25,7 @@ class App extends react.Component {
   hideLogin = () => {
     this.setState({ displayLogin: false })
   }
+  //This timer function and all related timer functions were to put a 'Under Maintanence' screen for an hour after deploying to make sure all features are working on the josted server with no error. The app goes back to normal when the time goes back to zero
   setTimer = () => {
     let countDownDate = new Date("Feb 15, 2023 20:00:00").getTime();
     setInterval(async ()=> {
